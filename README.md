@@ -1,5 +1,12 @@
 
 
+
+<!-- ======================== ASCII HEADER ======================== -->
+
+
+Zeek PCAP Analyzer
+Advanced Threat Detection for Network Analysts
+
 ---
 
 ````markdown
