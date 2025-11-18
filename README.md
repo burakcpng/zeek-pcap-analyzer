@@ -1,4 +1,4 @@
-Tamam! İşte GitHub’a direkt yükleyebileceğin **hazır README dosyası** İngilizce olarak, `.md` formatında:
+
 
 ---
 
