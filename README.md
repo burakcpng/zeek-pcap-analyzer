@@ -1,5 +1,11 @@
+<h1 align="center">🔍 Zeek PCAP Analyzer</h1>
 <p align="center">
-  <img src="assets/banner.png" alt="Zeek PCAP Analyzer Banner" width="600"/>
+  <strong>Advanced PCAP Analysis Tool using Zeek for Threat Detection</strong>
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Zeek-Network%20Security-red?style=for-the-badge">
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge">
 </p>
 
 
