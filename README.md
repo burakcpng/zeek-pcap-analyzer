@@ -18,7 +18,7 @@ Advanced Threat Detection for Network Analysts
 
 ---
 
-````markdown
+```markdown
 # Zeek PCAP Analyzer
 
 This Python tool analyzes PCAP files using **Zeek**, detects malicious network traffic, and generates detailed reports.
@@ -39,7 +39,7 @@ Install Python dependencies:
 
 ```bash
 pip install pandas
-````
+```
 
 Zeek must also be installed on your system:
 
