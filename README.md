@@ -39,8 +39,8 @@ This Python tool analyzes PCAP files using **Zeek**, detects malicious network t
 Install Python dependencies:
 
 ```bash
-pip install pandas
-````
+pip install -r requirements.txt
+```
 ```
 
 Zeek must also be installed on your system:
