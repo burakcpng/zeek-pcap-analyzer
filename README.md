@@ -157,4 +157,3 @@ MIT License
 ---
 
 
-Bunu yapayım mı?
