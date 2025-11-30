@@ -85,9 +85,22 @@ class ZeekPCAPAnalyzer:
             log_path = os.path.join(log_dir, filename)
             if os.path.exists(log_path):
                 try:
+                    columns = None
+                    with open(log_path, "r", encoding="utf-8", errors="replace") as log_file:
+                        for line in log_file:
+                            if line.startswith("#fields"):
+                                columns = line.strip().split()[1:]
+                                break
                     # Read Zeek log file (TSV format with comments)
-                    df = pd.read_csv(log_path, sep='\t', comment='#', 
-                                   na_values=['-'], low_memory=False)
+                    df = pd.read_csv(
+                        log_path,
+                        sep='\t',
+                        comment='#',
+                        header=None,
+                        names=columns,
+                        na_values=['-'],
+                        low_memory=False
+                    )
                     logs[log_type] = df
                     self.logger.info(f"Loaded {log_type}.log: {len(df)} records")
                 except Exception as e:
