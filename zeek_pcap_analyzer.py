@@ -352,11 +352,12 @@ def main():
     analyzer = ZeekPCAPAnalyzer(zeek_path=args.zeek_path)
     
     # Run analysis
-    try:
+ try:
         report = analyzer.analyze_pcap(args.pcap_file, args.output)
         if report:
             print(f"\nAnalysis completed successfully!")
-            print(f"Results saved in: {args.output or f'zeek_analysis_{datetime.now().strftime(\"%Y%m%d_%H%M%S\")}'}")
+            analysis_dir = args.output or f"zeek_analysis_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
+            print(f"Results saved in: {analysis_dir}")
         else:
             print("Analysis failed. Check logs for details.")
             sys.exit(1)
